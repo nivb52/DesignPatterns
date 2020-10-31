@@ -42,13 +42,15 @@ function CryptoCurrencyProxyPattern() {
 
 const proxy_api = new CryptoCurrencyProxyPattern();
 
-res = proxy_api.getValue('bitcoin');
-console.log(res);
-res = proxy_api.getValue('litecoin');
-console.log(res);
-res = proxy_api.getValue('ethereum');
-console.log(res);
-res = proxy_api.getValue('somecoin');
-console.log(res);
-res = proxy_api.getValue('bitcoin');
-console.log(res);
+[1, 2, 3, 4, 5, 6].forEach((element) => {
+  res = proxy_api.getValue('bitcoin');
+  console.log(res);
+  res = proxy_api.getValue('litecoin');
+  console.log(res);
+  res = proxy_api.getValue('ethereum');
+  console.log(res);
+  res = proxy_api.getValue('somecoin');
+  console.log(res);
+  res = proxy_api.getValue('bitcoin');
+  console.log(res);
+});
